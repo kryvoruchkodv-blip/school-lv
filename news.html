@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Останні новини та події школи.">
+    <meta name="keywords" content="новини, події, школа">
+    <meta name="author" content="School">
+    <title>Новини - Сучасна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">Сучасна школа</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про школу</a></li>
+                        <li><a href="teachers.html">Вчителі</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="news.html" class="active">Новини</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="admission.html" class="btn btn-primary">Вступ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Новини школи</h1>
+            <p>Слідкуйте за останніми подіями</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="news-filter-section">
+        <div class="container">
+            <div class="news-controls">
+                <div class="search-box">
+                    <input type="text" id="news-search" placeholder="Пошук новин...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Всі</button>
+                    <button class="filter-btn" data-category="education">Освіта</button>
+                    <button class="filter-btn" data-category="events">Події</button>
+                    <button class="filter-btn" data-category="sports">Спорт</button>
+                    <button class="filter-btn" data-category="achievements">Досягнення</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-main-section">
+        <div class="container">
+            <div class="news-grid">
+                <div class="card news-card" data-category="achievements">
+                    <div class="news-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="news-badge">Досягнення</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">25 квітня 2026</div>
+                        <h3>Переможці олімпіади з математики</h3>
+                        <p>Учні нашої школи здобули призові місця на обласній математичній олімпіаді. Іван Петренко (11-А) посів перше місце, а Марія Коваленко (10-Б) - друге місце серед учасників.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Директор школи</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="events">
+                    <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="news-badge">Події</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">20 квітня 2026</div>
+                        <h3>День відкритих дверей</h3>
+                        <p>Запрошуємо майбутніх учнів та їх батьків відвідати нашу школу 5 травня о 10:00. Ви зможете познайомитися з вчителями, відвідати класи та дізнатися про умови навчання.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Адміністрація</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="education">
+                    <div class="news-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="news-badge">Освіта</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">15 квітня 2026</div>
+                        <h3>Відкриття нової IT лабораторії</h3>
+                        <p>У нашій школі відкрилася сучасна комп'ютерна лабораторія, обладнана новітніми комп'ютерами та технікою для вивчення програмування, робототехніки та веб-дизайну.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Заступник директора</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="sports">
+                    <div class="news-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="news-badge">Спорт</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">10 квітня 2026</div>
+                        <h3>Перемога у баскетбольному турнірі</h3>
+                        <p>Шкільна баскетбольна команда здобула перше місце в обласному турнірі серед середніх навчальних закладів. Вітаємо наших спортсменів та тренера!</p>
+                        <div class="news-footer">
+                            <span class="news-author">Вчитель фізкультури</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="events">
+                    <div class="news-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="news-badge">Події</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">5 квітня 2026</div>
+                        <h3>Шкільний театральний фестиваль</h3>
+                        <p>Відбувся щорічний театральний фестиваль, в якому взяли участь учні 5-11 класів. Кращою виставою визнано "Лісову пісню" у виконанні 9-А класу.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Вчитель літератури</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="education">
+                    <div class="news-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <div class="news-badge">Освіта</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">1 квітня 2026</div>
+                        <h3>Міжнародний обмін з Польщею</h3>
+                        <p>Наша школа приєдналася до програми міжнародного обміну. Цього літа 20 учнів відвідають партнерську школу в Кракові для вивчення польської мови та культури.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Координатор проектів</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="achievements">
+                    <div class="news-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="news-badge">Досягнення</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">28 березня 2026</div>
+                        <h3>Перемога в конкурсі робототехніки</h3>
+                        <p>Команда юних робототехніків нашої школи посіла перше місце на всеукраїнському конкурсі "РобоФест 2026". Їхній проект - автономний робот-сортувальник отримав найвищу оцінку журі.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Вчитель інформатики</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="sports">
+                    <div class="news-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                        <div class="news-badge">Спорт</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">25 березня 2026</div>
+                        <h3>Відкриття оновленого спортзалу</h3>
+                        <p>Після капітального ремонту відкрився оновлений спортивний зал з новим обладнанням для баскетболу, волейболу та гімнастики. Тепер наші учні займаються в комфортних умовах.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Директор школи</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card news-card" data-category="events">
+                    <div class="news-image" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                        <div class="news-badge">Події</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">20 березня 2026</div>
+                        <h3>Весняна ярмарка талантів</h3>
+                        <p>Традиційна весняна ярмарка об'єднала учнів, вчителів та батьків. Виставка дитячих робіт, концертна програма та майстер-класи створили атмосферу свята.</p>
+                        <div class="news-footer">
+                            <span class="news-author">Організаційний комітет</span>
+                            <a href="#" class="btn btn-text">Читати далі →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">→</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Сучасна школа</h3>
+                    <p>Освіта для майбутнього</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакти</h4>
+                    <p>📍 вул. Шкільна, 15, Львів</p>
+                    <p>📞 +380 (44) 123-45-67</p>
+                    <p>✉️ info@modernschool.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Графік роботи</h4>
+                    <p>Пн-Пт: 8:00 - 18:00</p>
+                    <p>Сб: 9:00 - 14:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцмережі</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сучасна школа. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

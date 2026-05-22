@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Розклад уроків для різних класів.">
+    <meta name="keywords" content="розклад, уроки, заняття">
+    <meta name="author" content="School">
+    <title>Розклад - Сучасна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">Сучасна школа</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про школу</a></li>
+                        <li><a href="teachers.html">Вчителі</a></li>
+                        <li><a href="schedule.html" class="active">Розклад</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="admission.html" class="btn btn-primary">Вступ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Розклад уроків</h1>
+            <p>Перегляньте розклад занять для вашого класу</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <div class="container">
+            <!-- Class Tabs -->
+            <div class="schedule-tabs">
+                <button class="schedule-tab active" data-class="5a">5-А клас</button>
+                <button class="schedule-tab" data-class="5b">5-Б клас</button>
+                <button class="schedule-tab" data-class="6a">6-А клас</button>
+            </div>
+
+            <!-- Schedule Table for 5-A -->
+            <div class="schedule-content active" id="schedule-5a">
+                <div class="schedule-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Час</th>
+                                <th>Понеділок</th>
+                                <th>Вівторок</th>
+                                <th>Середа</th>
+                                <th>Четвер</th>
+                                <th>П'ятниця</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">8:30 - 9:15</td>
+                                <td class="subject math">Математика</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject science">Біологія</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject math">Математика</td>
+                            </tr>
+                            <tr>
+                                <td class="time">9:25 - 10:10</td>
+                                <td class="subject language">Українська література</td>
+                                <td class="subject math">Алгебра</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject science">Географія</td>
+                                <td class="subject it">Інформатика</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:25 - 11:10</td>
+                                <td class="subject science">Фізика</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject math">Геометрія</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject science">Хімія</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:30 - 12:15</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject science">Історія</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject math">Математика</td>
+                                <td class="subject language">Література</td>
+                            </tr>
+                            <tr>
+                                <td class="time">12:25 - 13:10</td>
+                                <td class="subject it">Інформатика</td>
+                                <td class="subject science">Географія</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject it">Робототехніка</td>
+                                <td class="subject science">Біологія</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:20 - 14:05</td>
+                                <td class="subject other">Музика</td>
+                                <td class="subject other">Образотворче мистецтво</td>
+                                <td class="subject science">Історія</td>
+                                <td class="subject other">Трудове навчання</td>
+                                <td class="subject sport">Хореографія</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Schedule Table for 5-B -->
+            <div class="schedule-content" id="schedule-5b">
+                <div class="schedule-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Час</th>
+                                <th>Понеділок</th>
+                                <th>Вівторок</th>
+                                <th>Середа</th>
+                                <th>Четвер</th>
+                                <th>П'ятниця</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">8:30 - 9:15</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject math">Математика</td>
+                                <td class="subject science">Фізика</td>
+                                <td class="subject math">Алгебра</td>
+                                <td class="subject language">Англійська мова</td>
+                            </tr>
+                            <tr>
+                                <td class="time">9:25 - 10:10</td>
+                                <td class="subject math">Геометрія</td>
+                                <td class="subject language">Українська література</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject science">Біологія</td>
+                                <td class="subject math">Математика</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:25 - 11:10</td>
+                                <td class="subject science">Історія</td>
+                                <td class="subject it">Інформатика</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject science">Географія</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:30 - 12:15</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject science">Хімія</td>
+                                <td class="subject math">Математика</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject it">Програмування</td>
+                            </tr>
+                            <tr>
+                                <td class="time">12:25 - 13:10</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject science">Географія</td>
+                                <td class="subject it">Інформатика</td>
+                                <td class="subject science">Історія</td>
+                                <td class="subject language">Література</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:20 - 14:05</td>
+                                <td class="subject other">Образотворче мистецтво</td>
+                                <td class="subject other">Музика</td>
+                                <td class="subject other">Трудове навчання</td>
+                                <td class="subject it">Робототехніка</td>
+                                <td class="subject science">Біологія</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Schedule Table for 6-A -->
+            <div class="schedule-content" id="schedule-6a">
+                <div class="schedule-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Час</th>
+                                <th>Понеділок</th>
+                                <th>Вівторок</th>
+                                <th>Середа</th>
+                                <th>Четвер</th>
+                                <th>П'ятниця</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">8:30 - 9:15</td>
+                                <td class="subject math">Алгебра</td>
+                                <td class="subject science">Фізика</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject math">Геометрія</td>
+                                <td class="subject language">Англійська мова</td>
+                            </tr>
+                            <tr>
+                                <td class="time">9:25 - 10:10</td>
+                                <td class="subject language">Українська література</td>
+                                <td class="subject math">Математика</td>
+                                <td class="subject science">Хімія</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject math">Алгебра</td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:25 - 11:10</td>
+                                <td class="subject science">Біологія</td>
+                                <td class="subject language">Англійська мова</td>
+                                <td class="subject math">Геометрія</td>
+                                <td class="subject it">Інформатика</td>
+                                <td class="subject science">Географія</td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:30 - 12:15</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject science">Історія України</td>
+                                <td class="subject language">Українська мова</td>
+                                <td class="subject science">Фізика</td>
+                                <td class="subject it">Веб-дизайн</td>
+                            </tr>
+                            <tr>
+                                <td class="time">12:25 - 13:10</td>
+                                <td class="subject it">Програмування</td>
+                                <td class="subject sport">Фізкультура</td>
+                                <td class="subject science">Всесвітня історія</td>
+                                <td class="subject language">Література</td>
+                                <td class="subject science">Хімія</td>
+                            </tr>
+                            <tr>
+                                <td class="time">13:20 - 14:05</td>
+                                <td class="subject science">Географія</td>
+                                <td class="subject it">Робототехніка</td>
+                                <td class="subject sport">Хореографія</td>
+                                <td class="subject other">Мистецтво</td>
+                                <td class="subject other">Музика</td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:15 - 15:00</td>
+                                <td class="subject other">Факультатив</td>
+                                <td class="subject other">Факультатив</td>
+                                <td class="subject other">Факультатив</td>
+                                <td class="subject other">Факультатив</td>
+                                <td class="subject other">Класна година</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="schedule-legend">
+                <h3>Легенда:</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="legend-color math"></span>
+                        <span>Математика</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color language"></span>
+                        <span>Мови</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color science"></span>
+                        <span>Наука</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color it"></span>
+                        <span>IT</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color sport"></span>
+                        <span>Спорт</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color other"></span>
+                        <span>Інше</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Сучасна школа</h3>
+                    <p>Освіта для майбутнього</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакти</h4>
+                    <p>📍 вул. Шкільна, 15, Львів</p>
+                    <p>📞 +380 (44) 123-45-67</p>
+                    <p>✉️ info@modernschool.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Графік роботи</h4>
+                    <p>Пн-Пт: 8:00 - 18:00</p>
+                    <p>Сб: 9:00 - 14:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцмережі</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сучасна школа. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

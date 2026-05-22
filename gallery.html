@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фотогалерея шкільного життя.">
+    <meta name="keywords" content="галерея, фото, події, школа">
+    <meta name="author" content="School">
+    <title>Галерея - Сучасна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">Сучасна школа</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про школу</a></li>
+                        <li><a href="teachers.html">Вчителі</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="gallery.html" class="active">Галерея</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="admission.html" class="btn btn-primary">Вступ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Фотогалерея</h1>
+            <p>Моменти шкільного життя</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Всі фото</button>
+                <button class="filter-btn" data-category="lessons">Уроки</button>
+                <button class="filter-btn" data-category="events">Події</button>
+                <button class="filter-btn" data-category="sports">Спорт</button>
+                <button class="filter-btn" data-category="trips">Екскурсії</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main-section">
+        <div class="container">
+            <div class="masonry-gallery">
+                <!-- 
+                    ЯК ДОДАТИ ФОТО:
+                    1. Помістіть фото у папку assets/images/
+                    2. Замініть "background: linear-gradient(...)" на:
+                       style="background: url('../assets/images/your-photo.jpg'); background-size: cover; background-position: center;"
+                    
+                    АБО використайте placeholder для тестування:
+                    style="background: url('https://source.unsplash.com/800x600/?school,classroom'); background-size: cover; background-position: center;"
+                -->
+                <div class="gallery-image" data-category="lessons" style="background: url('assets/images/word-image-75.png'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Урок математики</h3>
+                        <p>Розв'язування складних задач</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image tall" data-category="events" style="background: url('assets/images/septembed.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>День знань</h3>
+                        <p>Свято 1 вересня</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="sports" style="background: url('assets/images/sport.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Спортивні змагання</h3>
+                        <p>Міжшкільна естафета</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image wide" data-category="lessons" style="background: url('assets/images/chemistry.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Науковий експеримент</h3>
+                        <p>Лабораторія хімії</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="events" style="background: url('assets/images/newyear.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Новорічний ранок</h3>
+                        <p>Святкова програма</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image tall" data-category="trips" style="background: url('assets/images/history.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Екскурсія до музею</h3>
+                        <p>Вивчаємо історію</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="lessons" style="background: url('https://edusearch.com.ua/imagephp/width=1200&image=/pictures/products/products_thumbnail_ee6pTf4SNo.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>IT лабораторія</h3>
+                        <p>Програмування та робототехніка</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image wide" data-category="sports" style="background: url('https://allbasketball.org/uploads/posts/2019-12/thumbs/1577340707_21057053.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Баскетбольний турнір</h3>
+                        <p>Фінальний матч</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="events" style="background: url('https://opera.com.ua/sites/default/files/_dsc2944_s.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Шкільний театр</h3>
+                        <p>Вистава "Лісова пісня"</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="trips" style="background: url('https://ture.ua/wp-content/uploads/2026/04/1800-830-background-trekking04.webp'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Похід у Карпати</h3>
+                        <p>Туристичний табір</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image tall" data-category="lessons" style="background: url('https://i.ytimg.com/vi/PLxZ448seJE/sddefault.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Урок біології</h3>
+                        <p>Дослідження мікросвіту</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="events" style="background: url('https://cdn.abo.media/upload/article/2dqtvlcezskrluqt5bv1.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Випускний вечір</h3>
+                        <p>Прощання з школою</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image wide" data-category="sports" style="background: url('https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB#/media/%D0%A4%D0%B0%D0%B9%D0%BB:Brasil_vence_a_Fran%C3%A7a_no_v%C3%B4lei_masculino_1037987-15.08.2016_ffz-6369.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Волейбольна команда</h3>
+                        <p>Переможці обласних змагань</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="lessons" style="background: url('assets/images/chemistry.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Творча майстерня</h3>
+                        <p>Малювання та ліплення</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image" data-category="trips" style="background: url('assets/images/kyiv.jpg'); 
+          background-size: cover; 
+          background-position: center;">
+                    <div class="gallery-caption">
+                        <h3>Поїздка до Києва</h3>
+                        <p>Огляд визначних пам'яток</p>
+                    </div>
+                </div>
+
+                <div class="gallery-image tall" data-category="events" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                    <div class="gallery-caption">
+                        <h3>Концерт до 8 березня</h3>
+                        <p>Вітаємо вчительок</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-image"></div>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Сучасна школа</h3>
+                    <p>Освіта для майбутнього</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакти</h4>
+                    <p>📍 вул. Шкільна, 15, Львів</p>
+                    <p>📞 +380 (44) 123-45-67</p>
+                    <p>✉️ info@modernschool.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Графік роботи</h4>
+                    <p>Пн-Пт: 8:00 - 18:00</p>
+                    <p>Сб: 9:00 - 14:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцмережі</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сучасна школа. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

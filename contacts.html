@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакти школи, адреса, телефон, email.">
+    <meta name="keywords" content="контакти, адреса, телефон, школа">
+    <meta name="author" content="School">
+    <title>Контакти - Сучасна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">Сучасна школа</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про школу</a></li>
+                        <li><a href="teachers.html">Вчителі</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="contacts.html" class="active">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="admission.html" class="btn btn-primary">Вступ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакти</h1>
+            <p>Зв'яжіться з нами</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Адреса</h3>
+                    <p>вул. Шкільна, 15</p>
+                    <p>Львів, 79000</p>
+                    <p>Україна</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Телефони</h3>
+                    <p>Канцелярія: +380 (44) 123-45-67</p>
+                    <p>Директор: +380 (44) 123-45-68</p>
+                    <p>Вахта: +380 (44) 123-45-69</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>info@modernschool.ua</p>
+                    <p>director@modernschool.ua</p>
+                    <p>admissions@modernschool.ua</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Графік роботи</h3>
+                    <p>Понеділок - П'ятниця: 8:00 - 18:00</p>
+                    <p>Субота: 9:00 - 14:00</p>
+                    <p>Неділя: Вихідний</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Як нас знайти</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4982447144234!2d24.029717615744384!3d49.83826797939135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e4!2z0YPQuy4g0KjQutC-0LvRjNC90LDRjywgMTUsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1234567890123!5m2!1sru!2sua"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-info">
+                    <h2>Напишіть нам</h2>
+                    <p>Якщо у вас є запитання або пропозиції, будь ласка, заповніть форму, і ми зв'яжемося з вами найближчим часом.</p>
+                    <div class="form-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Відповідь протягом 24 годин</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Індивідуальна консультація</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Допомога у виборі програми</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон (необов'язково)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+380 (XX) XXX-XX-XX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Оберіть тему</option>
+                                <option value="admission">Вступ до школи</option>
+                                <option value="info">Загальна інформація</option>
+                                <option value="program">Навчальні програми</option>
+                                <option value="schedule">Розклад та заняття</option>
+                                <option value="other">Інше</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Повідомлення</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Введіть ваше повідомлення..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Надіслати повідомлення</button>
+                    </form>
+
+                    <div id="form-success" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Дякуємо за ваше повідомлення!</h3>
+                        <p>Ми зв'яжемося з вами найближчим часом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="additional-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-block">
+                    <h3>Транспорт</h3>
+                    <p><strong>Автобуси:</strong> №15, №28, №42</p>
+                    <p><strong>Трамваї:</strong> №3, №7</p>
+                    <p><strong>Маршрутки:</strong> №156, №243</p>
+                    <p>Зупинка: "Школа №25"</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Парковка</h3>
+                    <p>Безкоштовна парковка для батьків біля школи</p>
+                    <p>Місць: 50</p>
+                    <p>Охорона: Цілодобово</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Доступність</h3>
+                    <p>Пандус для людей з обмеженими можливостями</p>
+                    <p>Ліфт у головному корпусі</p>
+                    <p>Адаптовані санвузли</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Соціальні мережі</h3>
+                    <p><a href="#">Facebook: @ModernSchool</a></p>
+                    <p><a href="#">Instagram: @modern_school_lviv</a></p>
+                    <p><a href="#">YouTube: Modern School Lviv</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Сучасна школа</h3>
+                    <p>Освіта для майбутнього</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакти</h4>
+                    <p>📍 вул. Шкільна, 15, Львів</p>
+                    <p>📞 +380 (44) 123-45-67</p>
+                    <p>✉️ info@modernschool.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Графік роботи</h4>
+                    <p>Пн-Пт: 8:00 - 18:00</p>
+                    <p>Сб: 9:00 - 14:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцмережі</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сучасна школа. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

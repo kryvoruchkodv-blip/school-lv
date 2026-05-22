@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Професійні вчителі нашої школи.">
+    <meta name="keywords" content="вчителі, викладачі, педагоги">
+    <meta name="author" content="School">
+    <title>Вчителі - Сучасна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">Сучасна школа</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про школу</a></li>
+                        <li><a href="teachers.html" class="active">Вчителі</a></li>
+                        <li><a href="schedule.html">Розклад</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+                <a href="admission.html" class="btn btn-primary">Вступ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Наші вчителі</h1>
+            <p>Професіонали, які навчають ваших дітей</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Всі</button>
+                <button class="filter-btn" data-filter="math">Математика</button>
+                <button class="filter-btn" data-filter="languages">Мови</button>
+                <button class="filter-btn" data-filter="science">Наука</button>
+                <button class="filter-btn" data-filter="it">IT</button>
+                <button class="filter-btn" data-filter="sport">Спорт</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Grid -->
+    <section class="teachers-section">
+        <div class="container">
+            <div class="teachers-grid">
+                <div class="teacher-card" data-category="math">
+                    <div class="teacher-photo">👨‍🏫</div>
+                    <div class="teacher-info">
+                        <h3>Мельник Андрій Васильович</h3>
+                        <div class="teacher-subject">Математика</div>
+                        <div class="teacher-experience">Стаж: 15 років</div>
+                        <div class="teacher-email">📧 melnyk@school.ua</div>
+                        <p>Вчитель вищої категорії, переможець конкурсу "Учитель року"</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="languages">
+                    <div class="teacher-photo">👩‍🏫</div>
+                    <div class="teacher-info">
+                        <h3>Іваненко Олена Петрівна</h3>
+                        <div class="teacher-subject">Англійська мова</div>
+                        <div class="teacher-experience">Стаж: 12 років</div>
+                        <div class="teacher-email">📧 ivanenko@school.ua</div>
+                        <p>Сертифікат Cambridge CELTA, досвід роботи у Великобританії</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="science">
+                    <div class="teacher-photo">👨‍🔬</div>
+                    <div class="teacher-info">
+                        <h3>Коваль Михайло Іванович</h3>
+                        <div class="teacher-subject">Фізика</div>
+                        <div class="teacher-experience">Стаж: 18 років</div>
+                        <div class="teacher-email">📧 koval@school.ua</div>
+                        <p>Кандидат фізико-математичних наук, автор навчальних посібників</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="science">
+                    <div class="teacher-photo">👩‍🔬</div>
+                    <div class="teacher-info">
+                        <h3>Ткаченко Наталія Миколаївна</h3>
+                        <div class="teacher-subject">Хімія та Біологія</div>
+                        <div class="teacher-experience">Стаж: 10 років</div>
+                        <div class="teacher-email">📧 tkachenko@school.ua</div>
+                        <p>Організатор шкільних наукових проектів та олімпіад</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="it">
+                    <div class="teacher-photo">👨‍💻</div>
+                    <div class="teacher-info">
+                        <h3>Бондаренко Олексій Сергійович</h3>
+                        <div class="teacher-subject">Інформатика та програмування</div>
+                        <div class="teacher-experience">Стаж: 8 років</div>
+                        <div class="teacher-email">📧 bondarenko@school.ua</div>
+                        <p>Практикуючий розробник, тренер з робототехніки</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="languages">
+                    <div class="teacher-photo">👩‍💼</div>
+                    <div class="teacher-info">
+                        <h3>Павленко Марина Олександрівна</h3>
+                        <div class="teacher-subject">Українська мова та література</div>
+                        <div class="teacher-experience">Стаж: 20 років</div>
+                        <div class="teacher-email">📧 pavlenko@school.ua</div>
+                        <p>Заслужений вчитель України, керівник літературного гуртка</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="sport">
+                    <div class="teacher-photo">👨‍🏋️</div>
+                    <div class="teacher-info">
+                        <h3>Сидоренко Віктор Петрович</h3>
+                        <div class="teacher-subject">Фізична культура</div>
+                        <div class="teacher-experience">Стаж: 14 років</div>
+                        <div class="teacher-email">📧 sydorenko@school.ua</div>
+                        <p>Майстер спорту з легкої атлетики, тренер шкільної команди</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="math">
+                    <div class="teacher-photo">👩‍🏫</div>
+                    <div class="teacher-info">
+                        <h3>Григоренко Тетяна Василівна</h3>
+                        <div class="teacher-subject">Геометрія та алгебра</div>
+                        <div class="teacher-experience">Стаж: 16 років</div>
+                        <div class="teacher-email">📧 hryhorenko@school.ua</div>
+                        <p>Підготувала понад 50 переможців математичних олімпіад</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="languages">
+                    <div class="teacher-photo">👨‍🎓</div>
+                    <div class="teacher-info">
+                        <h3>Романенко Дмитро Олегович</h3>
+                        <div class="teacher-subject">Німецька мова</div>
+                        <div class="teacher-experience">Стаж: 9 років</div>
+                        <div class="teacher-email">📧 romanenko@school.ua</div>
+                        <p>Сертифікат Goethe-Institut, стажування у Німеччині</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="it">
+                    <div class="teacher-photo">👩‍💻</div>
+                    <div class="teacher-info">
+                        <h3>Литвиненко Анна Ігорівна</h3>
+                        <div class="teacher-subject">Веб-дизайн та графіка</div>
+                        <div class="teacher-experience">Стаж: 7 років</div>
+                        <div class="teacher-email">📧 lytvynenko@school.ua</div>
+                        <p>Практикуючий дизайнер, організатор творчих проектів</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="science">
+                    <div class="teacher-photo">👨‍🔬</div>
+                    <div class="teacher-info">
+                        <h3>Левченко Ігор Миколайович</h3>
+                        <div class="teacher-subject">Географія та екологія</div>
+                        <div class="teacher-experience">Стаж: 11 років</div>
+                        <div class="teacher-email">📧 levchenko@school.ua</div>
+                        <p>Організатор екологічних проектів та експедицій</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-category="sport">
+                    <div class="teacher-photo">👩‍🏋️</div>
+                    <div class="teacher-info">
+                        <h3>Кравченко Юлія Андріївна</h3>
+                        <div class="teacher-subject">Хореографія та гімнастика</div>
+                        <div class="teacher-experience">Стаж: 13 років</div>
+                        <div class="teacher-email">📧 kravchenko@school.ua</div>
+                        <p>Керівник танцювального колективу, лауреат міжнародних конкурсів</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Сучасна школа</h3>
+                    <p>Освіта для майбутнього</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакти</h4>
+                    <p>📍 вул. Шкільна, 15, Львів</p>
+                    <p>📞 +380 (44) 123-45-67</p>
+                    <p>✉️ info@modernschool.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Графік роботи</h4>
+                    <p>Пн-Пт: 8:00 - 18:00</p>
+                    <p>Сб: 9:00 - 14:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцмережі</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сучасна школа. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
